@@ -1,14 +1,15 @@
 {
-  "name": "forum",
+  "name": "forum-project",
   "version": "1.0.0",
-  "description": "Forum with local storage",
-  "main": "server.js",
+  "description": "A simple forum application front-end.",
+  "main": "index.html",
+  "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "echo \"Use a live server extension to run locally.\"",
+    "build": "echo \"No build step required. Files are served directly.\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "express": "^4.17.1",
-    "cors": "^2.8.5",
-    "body-parser": "^1.19.0"
-  }
-} 
+  "author": "",
+  "license": "ISC"
+}
+
