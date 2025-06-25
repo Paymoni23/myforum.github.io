@@ -1,0 +1,243 @@
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a2630;
+    padding: 20px;
+}
+
+.auth-box {
+    background: #23323e;
+    border-radius: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-icon {
+    font-size: 3em;
+    color: var(--first-color);
+    margin-bottom: 20px;
+}
+
+.auth-header h1 {
+    color: #fff;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.auth-header p {
+    color: #666;
+    font-size: 1em;
+}
+
+.auth-form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #fff;
+    margin-bottom: 12px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.input-group i {
+    position: absolute;
+    left: 12px;
+    color: #666;
+    font-size: 1.2em;
+    margin-right: 12px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: var(--first-color);
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #666;
+}
+
+/* Add specific spacing for Student ID field */
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me, .terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.remember-me input[type="checkbox"],
+.terms input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--first-color);
+}
+
+.forgot-password {
+    color: var(--first-color);
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 12px;
+    background: var(--first-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-button:hover {
+    background: #5a8c2b;
+}
+
+.auth-divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.auth-divider::before {
+    left: 0;
+}
+
+.auth-divider::after {
+    right: 0;
+}
+
+.auth-divider span {
+    background: #23323e;
+    padding: 0 10px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.social-auth {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background: transparent;
+    color: #fff;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-button:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.social-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-button i {
+    font-size: 1.2em;
+}
+
+.auth-footer {
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.auth-footer a {
+    color: var(--first-color);
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Error messages */
+.error-message {
+    color: #ff4545;
+    font-size: 0.85em;
+    display: none;
+    margin-left: 5px;
+}
+
+.input-error {
+    border-color: #ff4545 !important;
+}
+
+/* Success messages */
+.success-message {
+    color: #30d158;
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: none;
+} 

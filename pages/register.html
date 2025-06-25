@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/auth.css">
+    <title>Register | Test Chain Forum</title>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="auth-header">
+                <i class='bx bxs-leaf logo-icon'></i>
+                <h1>Create Account</h1>
+                <p>Join our community today</p>
+            </div>
+            
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="studentId">Student ID</label>
+                    <div class="input-group">
+                        <i class='bx bx-id-card'></i>
+                        <input type="text" id="studentId" name="studentId" maxlength="5" required placeholder="Enter your Student ID (5 digits)">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <div class="input-group">
+                        <i class='bx bx-user'></i>
+                        <input type="text" id="username" name="username" required placeholder="Choose a username">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-group">
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" id="password" name="password" required placeholder="Create a password">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="input-group">
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+                    </div>
+                </div>
+                
+                <div class="form-options">
+                    <label class="terms">
+                        <input type="checkbox" id="terms" required>
+                        <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="auth-button">Create Account</button>
+            </form>
+            
+            <div class="auth-footer">
+                <p>Already have an account? <a href="/pages/login.html">Sign in</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/auth.js"></script>
+</body>
+</html> 

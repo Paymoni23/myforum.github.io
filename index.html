@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/bb97f7b388.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <title>Test Chain | Forum</title>
+</head>
+
+<body>
+
+    <div class="blocks">
+
+        <!-- navbar -->
+
+        <div class="nav" id="nav">
+            <nav class="nav_content">
+                <a href="#" class="nav_logo">
+                    <i class='bx bxs-leaf'></i>
+                    <span class="nav_logo-name">TestChain</span>
+                </a>
+                <div class="nav_list">
+                    <a href="#" class="nav_link active-link">
+                        <i class='bx bxs-conversation'></i>
+                        <span class="nav_name">Forums</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <i class='bx bxs-hot'></i>
+                        <span class="nav_name">What's News</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <i class='bx bxs-receipt'></i>
+                        <span class="nav_name">Resources</span>
+                    </a>
+                    <a href="/pages/members.html" class="nav_link">
+                        <i class='bx bxs-user'></i>
+                        <span class="nav_name">Members</span>
+                    </a>
+
+                    <div class="sidebar-line"></div>
+
+                    <a href="/pages/login.html" class="nav_link auth-link" data-auth="logged-out">
+                        <i class='bx bx-log-in'></i>
+                        <span class="nav_name">Login</span>
+                    </a>
+                    <a href="#" class="nav_link auth-link" data-auth="logged-in" onclick="logout()">
+                        <i class='bx bx-log-out'></i>
+                        <span class="nav_name">Logout</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- middle block -->
+
+        <section class="middle">
+
+            <div class="header">
+                <div class="search">
+                    <div class="search-flex">
+                        <button type="submit" class="search-button">
+                            <i class='bx bx-search'></i>
+                        </button>
+                        <input type="text" class="search-term" placeholder="Search...">
+                    </div>
+                </div>
+
+                <div class="profile-count">
+                    <i class='bx bxs-plus-circle'></i>
+                    <i class='bx bxs-bell'></i>
+                    <div class="user-info auth-link" data-auth="logged-in">
+                        <!-- This will be populated by auth.js -->
+                    </div>
+                    <a href="/pages/login.html" class="auth-link" data-auth="logged-out">
+                        <img class="profile-photo" src="/img/57813046.jpg" alt="Profile Photo">
+                    </a>
+                </div>
+            </div>
+
+            <!-- page path -->
+
+            <ul class="path">
+                <a href=""><li>Home</li></a>
+                <i class='tx bx bxs-chevron-right'></i>
+                <a class="left" href=""><li>Community Forums</li></a>
+            </ul>
+
+            <!-- welcome Message -->
+
+            <div class="merge">
+                <div class="post">
+
+                    <div class="welcome-container">
+                        <div class="welcome-flex">
+                            <div class="welcome-text">
+                                <p class="welcome-title">Join on The Events In the Community</p>
+                                <p class="welcome-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus nulla quaerat libero vel laborum fugiat, dolorum et. Fugit velit, amet laboriosam, ad sed cumque itaque architecto quis quisquam expedita fugiat?</p>
+                                <a href="#" class="get-started">Get Started</a>
+                            </div>
+                            <img class="calendar" src="/img/calendar.png" alt="Calendar">
+                        </div>
+                    </div>
+
+                    <div class="community-forums">
+                        
+                        <div class="cf-title">
+                            <i class='bx bxs-conversation'></i>
+                            <p class="cf-title-text">Community Forums</p>
+                        </div>
+
+                        <div class="cf-tags">
+                            <a href="#" class="tags-count">
+                                <p class="tags-name">All</p>
+                            </a>
+                            <a href="#" class="tags-count">
+                                <p class="tags-name">Official Forums</p>
+                            </a>
+                            <a href="#" class="tags-count">
+                                <p class="tags-name">Customer Forums</p>
+                            </a>
+                            <a href="#" class="tags-count">
+                                <p class="tags-name">Public Forums</p>
+                            </a>
+
+                            <div class="filter">
+                                <box-icon name='filter'></box-icon>
+                            </div>
+                        </div>
+
+                        <div class="cf-topics">
+                            <div class="cf-topics-count">
+
+                                <div class="cf-topics-texts">
+                                    <div class="cf-topics-icon-1">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="cft-text">
+                                        <a href="/pages/academic.html" class="cf-topic-name">Academic Discussion</a>
+                                        <p class="forum-type">Sub-Forum</p>
+                                    </div>
+                                </div>
+
+                                <div class="cf-topic-reactions">
+                                    <div class=cf-topic-threads>
+                                        <p class="threads-amount">5.1K</p>
+                                        <p>Threads</p>
+                                    </div>
+                                    <div class=cf-topic-messages>
+                                        <p class="messages-amount">302.5K</p>
+                                        <p>Messages</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="cf-topics-count">
+
+                                <div class="cf-topics-texts">
+                                    <div class="cf-topics-icon-2">
+                                        <i class="fa-solid fa-comments"></i>
+                                    </div>
+                                    <div class="cft-text">
+                                        <a href="/pages/general.html" class="cf-topic-name">General Discussion</a>
+                                    </div>
+                                </div>
+
+                                <div class="cf-topic-reactions">
+                                    <div class=cf-topic-threads>
+                                        <p class="threads-amount">5.1K</p>
+                                        <p>Threads</p>
+                                    </div>
+                                    <div class=cf-topic-messages>
+                                        <p class="messages-amount">302.5K</p>
+                                        <p>Messages</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="cf-topics-count">
+
+                                <div class="cf-topics-texts">
+                                    <div class="cf-topics-icon-3">
+                                        <i class="fa-solid fa-newspaper"></i>
+                                    </div>
+                                    <div class="cft-text">
+                                        <a href="/pages/news.html" class="cf-topic-name">News</a>
+                                        <p class="forum-type">Sub-Forum</p>
+                                    </div>
+                                </div>
+
+                                <div class="cf-topic-reactions">
+                                    <div class=cf-topic-threads>
+                                        <p class="threads-amount">5.1K</p>
+                                        <p>Threads</p>
+                                    </div>
+                                    <div class=cf-topic-messages>
+                                        <p class="messages-amount">302.5K</p>
+                                        <p>Messages</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cf-title">
+                        <i class='bx bxs-conversation'></i>
+                        <p class="cf-title-text">Statics</p>
+                    </div>
+
+                </div>
+
+    
+                <!-- right -->
+
+                <div class="right">
+
+                    <!-- Recent Threads -->
+                    <div class="staff-container">
+                        <div class="title">
+                            <div class="title-flex">
+                                <i class='bx bx-time mt'></i>
+                                <p class="staff-text">Recent Threads</p>
+                            </div>
+                        </div>
+                        <div class="recent-threads">
+                            <!-- Recent threads will be loaded here dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="right-line"></div>
+
+                    <!-- staff -->
+                    <div class="staff-container">
+                        <div class="title">
+                            <div class="title-flex">
+                                <i class='mt bx bxs-user'></i>
+                                <p class="staff-text">Staff</p>
+                            </div>
+                        </div>
+
+                        <div class="member-count">
+                            <div class="member-flex">
+                                <div class="member-icon">
+                                    <i class='icon bx bx-user'></i>
+                                    <div class="member-text">
+                                        <p class="staff-name">Krittin Trakanrangsi</p>
+                                        <p class="staff-rank">System Admin</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-count">
+                            <div class="member-flex">
+                                <div class="member-icon">
+                                    <i class='icon bx bx-user'></i>
+                                    <div class="member-text">
+                                        <p class="staff-name">GUIDE</p>
+                                        <p class="staff-rank">NONE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-count">
+                            <div class="member-flex">
+                                <div class="member-icon">
+                                    <i class='icon bx bx-user'></i>
+                                    <div class="member-text">
+                                        <p class="staff-name">MAWIN</p>
+                                        <p class="staff-rank">NONE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/auth.js"></script>
+
+</body>
+
+</html>
